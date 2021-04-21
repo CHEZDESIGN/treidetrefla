@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreiDeTrefla</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="bg-ebony text-white antialiased">
+
+    <div id="nav" class="bg-gray-900 fixed top-0 w-full z-10 bg-transparent">
+        <div class="py-5 mx-auto container w-full">
+            <div class="relative flex items-center justify-between">
+                <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                    <img src="assets/logo.png" style="height: 50px;" alt="Website Logo">
+                </a>
+                <ul class="flex items-center hidden space-x-8 lg:flex">
+                    <li><a href="/" aria-label="Our product" title="Our product"
+                            class="font-medium tracking-wide text-secondary transition-colors duration-200 hover:text-secondary">Acasă</a>
+                    </li>
+                    <li><a href="/" aria-label="About us" title="About us"
+                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-secondary">Despre
+                            mine</a></li>
+                    <li><a href="/" aria-label="Product pricing" title="Product pricing"
+                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-secondary">Ce
+                            primești</a>
+                    </li>
+                    <li><a href="/" aria-label="About us" title="About us"
+                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-secondary">Cumpără</a>
+                    </li>
+                    <li><a href="/" aria-label="About us" title="About us"
+                            class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-secondary">Contact</a>
+                    </li>
+                </ul>
+                <ul class="flex items-center hidden space-x-8 lg:flex">
+                    <li>
+                        <a href="/" id="loginButton"
+                            class="inline-flex items-center justify-center h-[40px] px-6 font-semibold tracking-wide text-white transition duration-200 shadow-lg bg-ebony hover:bg-ebony-400 focus:shadow-outline focus:outline-none rounded-lg"
+                            aria-label="Sign up" title="Autentificare">
+                            Autentificare
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile menu -->
+                <div class="lg:hidden">
+                    <button aria-label="Open Menu" title="Open Menu"
+                        class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                        <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                            <path fill="currentColor"
+                                d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hero">
+        <div class="w-full bg-center bg-cover h-screen relative py-24 flex content-center items-center justify-center flex-col"
+            data-depth='0.10' data-type='parallax'
+            style="background-image: url(assets/smoke7.jpg);background-attachment: fixed;">
+            <span id="blackOverlay"
+                class="w-full h-full absolute bg-ebony-0 top-0 left-0 bottom-0 right-0 opacity-10 bg-main"></span>
+            <div class="container relative mx-auto lg:mx-0 mt-16">
+                <section class="text-white body-font">
+                    <div>
+                        <div class="container flex flex-col items-center py-16 mx-auto md:flex-row">
+                            <div
+                                class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-8/12 md:pr-8 md:items-start md:text-left md:mb-0 lg:text-center">
+                                <h1 data-aos="fade-up" class="mb-8 text-2xl sm:text-4xl font-bold text-center text-white md:text-left md:text-6xl title-font roboto-regular gfont"
+                                    style="text-shadow: 0px 2px 1px rgb(0 0 0 / 50%);line-height: 65px;">
+                                    Învață magie online<br class="hidden md:block">
+                                    <span class="ml-24">in timpul tău liber</span>
+                                </h1>
+                                <p data-aos="fade-up" data-aos-delay="300" class="mb-12 text-md leading-tight text-center text-white md:text-left md:text-xl ml-24"
+                                    style="line-height: 26px;">
+                                    Pentru prima dată în România, cursuri online de magie <br
+                                        class="hidden md:block">cu abonament lunar și anual.
+                                </p>
+                                <div class="flex flex-col lg:flex-row justify-center ml-24">
+                                    <a data-aos="zoom-in" data-aos-delay="500" href="#" class="button rounded-lg px-24 uppercase" data-text="Inscrie-te acum!">
+                                        Inscrie-te acum!
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-4/12 lg:max-w-lg lg:w-full md:w-4/12">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- data-depth='0.50' -->
+    <div id="content" data-type='parallax' class="bg-white">
+        <section class="body-font py-36 relative"
+            style="background: url(/assets/bg1.png);background-position: bottom;background-size: cover;">
+            <div class="container mx-auto">
+                <Link to="coursedet">
+                <div class="mx-auto flex  md:flex-row flex-col jobcard">
+                    <div
+                        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">
+
+                        <figure class="visible">
+
+                            <div class="">
+
+                                <div data-aos="fade-up" class="px-2 sm:pr-6">
+                                    <span
+                                        class="inline-block py-1 px-2 bg-ebony-200 text-white  text-xs font-bold tracking-widest mb-2">Descoperă
+                                        Magia</span>
+                                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-black">Cine este
+                                        Treidetreflă
+                                    </h1>
+                                    <p class="text-base pb-6">Numele meu este Marcu Alexandru Ionuț. Sunt cel mai rapid
+                                        iluzionist român : în 2019-2020 cel mai de succes Start-up din
+                                        domeniul meu, adică cele mai multe spectacole cu cei mai mulți spectatori în cel
+                                        mai scurt timp.</p>
+                                    <p class="text-base pb-8">Dar lucrurile nu au fost întotdeauna roz. Fiindcă totul
+                                        are un început. Nu m-am născut bogat. Și nu consider bogăția a
+                                        avea cât mai mult ci a avea nevoie de cât mai puțin.</p>
+                                    <div class="flex items-center justify-between">
+                                        <a href="/" aria-label=""
+                                            class="inline-flex items-center font-semibold transition-colors duration-200 text-secondary-300 hover:text-secondary-500">
+                                            Vezi toată povestea mea
+                                            <svg class="inline-block w-2 mt-1 ml-2" fill="currentColor"
+                                                viewBox="0 0 12 12">
+                                                <path
+                                                    d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+
+                    </div>
+                    <div data-aos="zoom-in" class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:block hidden">
+                        <div class="youtube shadow-xl border-2 rounded-xl border-secondary-400"
+                            style="border-color: #db9e0cad;" data-embed="W7Lsn6OqZEc">
+                            <div class="play-button"></div>
+                        </div>
+                    </div>
+                </div>
+                </Link>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="bg-white">
+            <div
+                class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-28 z-0 text-darken-500 relative">
+                <img src="/assets/shapes2.png" class="absolute left-0 top-0 opacity-30" style="z-index: -1;">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20">
+                    <h2 data-aos="fade-up" class="mb-2 text-3xl font-black leading-none tracking-tight text-ebony sm:text-5xl md:mx-auto">
+                        Alege cursul care ți se potrivește
+                    </h2>
+                    <p data-aos="fade-up" data-aos-delay="50" class="text-base text-ebony md:text-xl">
+                        Fiecare curs este împărțit in 3 Secțiuni (începător, mediu și avansat).
+                    </p>
+                </div>
+
+
+                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mx-auto container">
+
+
+
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://img1.grunge.com/img/uploads/2018/04/magicians-died-trick.jpg"
+                                alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">Iluzionism</p>
+                                <p class="mb-4 text-base text-gray-100">Magician in 30 de min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="150">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://www.freemagictricksandillusions.com/images/dreamstime_xs_34897648.jpg"
+                                alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">Mentalism</p>
+                                <p class="mb-4 text-base text-gray-100">Citește gândurile oricui</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://magicbymio.com/wp-content/uploads/2014/10/magichands.jpg" alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">Street Magic</p>
+                                <p class="mb-4 text-base text-gray-100">Uimește-i pe toți</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="250">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://image.freepik.com/free-photo/magician-s-hand-holding-fanned-playing-cards-against-black-background_23-2147880783.jpg"
+                                alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">Mathemagic</p>
+                                <p class="mb-4 text-base text-gray-100">Fă calcule ca un geniu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/istock-card_trick.jpg?itok=V9cG4RFD"
+                                alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">Prestidigitație</p>
+                                <p class="mb-4 text-base text-gray-100">Tu ești spectacolul</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="350">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://media.istockphoto.com/photos/magician-or-illusionist-is-showing-magic-trick-blue-stage-light-in-picture-id912003020?k=6&m=912003020&s=612x612&w=0&h=VkEqardApIiCXx8kjxCI4cuIy9Nd7LXqTzxRVOvCiOU="
+                                alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">Comedy Magic</p>
+                                <p class="mb-4 text-base text-gray-100">Fă-i pe toți să râdă</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://c0.wallpaperflare.com/preview/214/435/785/hypnosis-clock-pocket-watch-pendulum.jpg"
+                                alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">Hipnoză</p>
+                                <p class="mb-4 text-base text-gray-100">Lider printre prieteni</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="450">
+                        <div
+                            class="relative overflow-hidden transition duration-300 transform rounded-xl shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                            <img class="object-cover w-full h-56 md:h-64 xl:h-48"
+                                src="https://lh3.googleusercontent.com/proxy/v5kJ_dO9JKhPI6jNXMcdWC_xc8Cf13yt-G1tMKXhsMEsEiD0nIFD4DHhP0AGYAGHueur4jXW1zNw6J_YwmHA1fK1Z5X6LJE"
+                                alt="Person" />
+                            <div
+                                class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-ebony bg-opacity-50">
+                                <p class="text-3xl font-bold text-gray-100">7 Arte</p>
+                                <p class="mb-4 text-base text-gray-100">Fii in centrul atenției</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section
+            style="background: url(/assets/shapes3.png);background-size: cover;background-position: bottom center;">
+            <div class="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20">
+                <div class="flex flex-col items-center justify-between lg:flex-row">
+                    <div data-aos="fade-up" class="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
+                        <div class="max-w-xl mb-6">
+                            <h2
+                                class="max-w-lg mb-6 text-3xl font-black tracking-tight text-ebony sm:text-5xl sm:leading-none">
+                                Ce cursuri conțin?
+                            </h2>
+                            <p class="text-base text-ebony md:text-lg">
+                                Fiecare curs este împărțit in 3 secțiuni (începător, mediu și avansat).
+                                Avansat nu înseamnă greu, înseamnă că
+                                trebuie să exersezi mai mult.
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center md:flex-row">
+                            <a href="/"
+                                class="inline-flex items-center justify-center w-full h-12 px-12 mb-3 font-bold tracking-wide text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                Inscrie-te acum!
+                            </a>
+                            <a href="/" aria-label=""
+                                class="inline-flex items-center font-semibold text-ebony transition-colors duration-200 hover:text-deep-purple-accent-700">15%
+                                reducere</a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="relative lg:w-1/2">
+                        <img class="object-cover w-full h-56 rounded-xl shadow-lg sm:h-96"
+                            style="box-shadow: 0px 24px 64px -12px rgb(20 22 23 / 59%);" src="/assets/3.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section style="background: url(/assets/pex4.jpg);background-size: cover;background-position: bottom center;">
+            <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-28">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20">
+                    <h2 data-aos="fade-up" class="mb-2 text-3xl font-black leading-none tracking-tight sm:text-5xl md:mx-auto">
+                        De ce ai nevoie de acest curs?
+                    </h2>
+                </div>
+                <div class="grid max-w-screen-lg mx-auto space-y-6 lg:grid-cols-2 lg:space-y-0">
+                    <div class="space-y-6 sm:px-16">
+                        <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col items-center max-w-md sm:flex-row">
+                            <div class="mb-4 mr-4">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-transparent">
+                                    <svg class="w-8 h-8 text-secondary-300 sm:w-10 sm:h-10"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="mb-3 text-xl font-bold leading-5">Scapi de timiditate
+                                </h6>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="150" class="flex flex-col items-center max-w-md sm:flex-row">
+                            <div class="mb-4 mr-4">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-transparent">
+                                    <svg class="w-8 h-8 text-secondary-300 sm:w-10 sm:h-10"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="mb-3 text-xl font-bold leading-5">Dezvoltă imaginația</h6>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col items-center max-w-md sm:flex-row">
+                            <div class="mb-4 mr-4">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-transparent">
+                                    <svg class="w-8 h-8 text-secondary-300 sm:w-10 sm:h-10"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="mb-3 text-xl font-bold leading-5">Comunici perfect cu cei din jur</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="250" class="space-y-6 sm:px-16">
+                        <div class="flex flex-col items-center max-w-md sm:flex-row">
+                            <div class="mb-4 mr-4">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-transparent">
+                                    <svg class="w-8 h-8 text-secondary-300 sm:w-10 sm:h-10"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="mb-3 text-xl font-bold leading-5">Dacă ai trac de scenă, acesta va dispărea
+                                    ca prin magie</h6>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col items-center max-w-md sm:flex-row">
+                            <div class="mb-4 mr-4">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-transparent">
+                                    <svg class="w-8 h-8 text-secondary-300 sm:w-10 sm:h-10"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="mb-3 text-xl font-bold leading-5">Dezvoltă creativitatea</h6>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="350" class="flex flex-col items-center max-w-md sm:flex-row">
+                            <div class="mb-4 mr-4">
+                                <div class="flex items-center justify-center w-12 h-12 rounded-full bg-transparent">
+                                    <svg class="w-8 h-8 text-secondary-300 sm:w-10 sm:h-10"
+                                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="mb-3 text-xl font-bold leading-5">Devii lider în cercul tău de prieteni</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="text-ebony" style="background: url(/assets/circle.png), #fbd31c;background-size: cover;">
+            <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20">
+                    <h2 data-aos="fade-down" class="mb-2 text-3xl font-black leading-none tracking-tight sm:text-5xl md:mx-auto">
+                        Primești <span class="text-[#fe1949]">certificat</span> pentru cursurile parcurse
+                    </h2>
+                    <p data-aos="fade-down" data-aos-delay="50" class="text-base text-ebony md:text-xl">
+                        La completarea unui curs vei primi un certificat care îți va recunoaște meritele.
+                    </p>
+                </div>
+                <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                    <div class="grid row-gap-8 sm:grid-cols-3">
+                        <div data-aos="zoom-in" data-aos-delay="100" class="text-center">
+                            <h6 class="text-5xl font-black text-deep-purple-accent-400">3000</h6>
+                            <p class="font-bold">de spectacole în ultimii 20 de ani</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="150" class="text-center">
+                            <h6 class="text-5xl font-black text-deep-purple-accent-400">30 000</h6>
+                            <p class="font-bold">de reacții diferite</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="200" class="text-center">
+                            <h6 class="text-5xl font-black text-deep-purple-accent-400">3 000 000</h6>
+                            <p class="font-bold">de spectatori</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="text-ebony body-font overflow-hidden"
+            style="background: url(/assets/lines.png);background-size: cover;">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20">
+                    <h2 data-aos="fade-up" class="mb-2 text-3xl font-black leading-none tracking-tight sm:text-5xl md:mx-auto">
+                        Cine te învață?
+                    </h2>
+                </div>
+                <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img data-aos="fade-up" data-aos-delay="100"
+                        class="lg:w-1/2 w-full h-[360px] overflow-hidden object-cover object-center rounded-2xl shadow-xl"
+                        style="box-shadow: 0px 24px 64px -12px rgb(20 22 23 / 59%);" src="/assets/trei.png">
+                    <div data-aos="fade-up" data-aos-delay="150" class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        <span
+                            class="inline-block py-1 px-2 bg-ebony-200 text-white  text-xs font-bold tracking-widest mb-2">Descoperă
+                            Magia</span>
+                        <h1 class="text-gray-900 text-3xl title-font font-bold mb-1">Marcu Alexandru Ionuț</h1>
+                        <div class="mb-4 text-gray-400">
+                            Creator de spectacol
+                        </div>
+                        <!-- <p class="leading-relaxed">Sunt cel mai rapid iluzionist român : în 2019-2020 cel mai de succes Start-up din domeniul meu, adică cele mai multe
+                        spectacole cu cei mai mulți spectatori în cel mai scurt timp.</p> -->
+                        <div class="mt-6 items-center pb-5 mb-5">
+
+                            <div class="flex flex-col justify-center">
+                                <div class="pb-4">
+                                    <h6 class="font-semibold leading-5">
+                                        - Semifinalist de la Romanii au Talent
+                                    </h6>
+                                </div>
+                                <div class="pb-4">
+                                    <h6 class="font-semibold leading-5">
+                                        - Cel mai tanar artist prezent în cel mai mare turneu national cu cei mai mari
+                                        artiști : Smiley, Andra, Connect-r, etc
+                                    </h6>
+                                </div>
+                                <div>
+                                    <h6 class="mb-2 font-semibold leading-5">
+                                        - Cel mai de succes Spectacol 2019-2020: “Îți mulțumesc, Mama!”
+                                    </h6>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex">
+                            <a data-aos="zoom-in" data-aos-delay="200" href="/"
+                                class="inline-flex ml-auto items-center justify-center w-full h-12 px-12 mb-3 font-bold tracking-wide text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                Inscrie-te acum!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="bg-secondary-500"
+            style="background: url(/assets/bg6.jpg);background-size: cover;backdrop-filter: blur(50px);">
+            <div class="container mx-auto p-20 text-ebony">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20">
+                    <h2 data-aos="fade-up" class="mb-2 text-3xl font-black leading-none tracking-tight sm:text-5xl md:mx-auto text-white">
+                        Abonamente
+                    </h2>
+                </div>
+                <div class="container mx-auto flex flex-wrap"
+                    style="box-shadow: 0px 24px 64px -12px rgb(20 22 23 / 59%);">
+                    <div data-aos="fade-right" data-aos-delay="100" class="flex-auto w-full md:w-1/2 mb-6 md:mb-0 bg-white shadow-lg md:shadow-none relative">
+
+                        <div
+                            class="flex flex-wrap justify-between lg:flex-no-wrap px-4 sm:px-6 py-8 text-grey-darker text-sm">
+                            <div class="mb-6 lg:w-3/5 lg:mb-0">
+                                <h3 class="mb-3 text-3xl font-bold">Premium</h3>
+                                <p>7 sectiuni: iluzionism / street magic / mentalism / hipnoza / mathemagic /
+                                    prestidigitație / comedy magic
+                                </p>
+                            </div>
+                            <div class="lg:flex-no-shrink justify-center items-center flex flex-col">
+                                <span class="text-3xl block font-bold"><small>&euro;</small>21.00</span>
+                                <strong>Abonament Anual</strong>
+                            </div>
+                        </div>
+                        <div class="px-4 sm:px-6 py-8">
+                            <div class="mb-8 font-black text-lg">Acces la peste 111 lecții video</div>
+                            <div class="grid gap-4 lg:grid-cols-3 mb-28">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Iluzionism</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Mentalism</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Hipnoză</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Street Magic</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Mathemagic</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Prestidigitație</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Comedy Magic</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div>Bonus 1 : Secretul cum să devii viral pe Instagram</div>
+                            <div>Bonus 2 : Update 1 curs la 3 zile</div> -->
+                            <!-- <a href="#" class="inline-block py-3 px-8 font-bold rounded-lg text-sm text-white no-underline uppercase bg-secondary-500">Inscrie-te acum!</a> -->
+                            <div class="flex flex-col items-center md:flex-row absolute bottom-6">
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Inscrie-te acum!
+                                </a>
+                                <a href="/" aria-label=""
+                                    class="inline-flex items-center font-semibold text-ebony transition-colors duration-200 hover:text-deep-purple-accent-700">+12
+                                    Bonusuri</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-delay="150" class="flex-auto w-full md:w-1/2 mb-6 md:mb-0 bg-ebony shadow-lg md:shadow-none relative">
+                        <div
+                            class="flex flex-wrap justify-between lg:flex-no-wrap px-4 sm:px-6 py-8 text-white text-sm">
+                            <div class="mb-6 lg:w-3/5 lg:mb-0">
+                                <h3 class="mb-3 text-3xl font-bold">Basic</h3>
+                                <p>7 sectiuni: iluzionism / street magic / mentalism / hipnoza / mathemagic /
+                                    prestidigitație / comedy magic
+                                </p>
+                            </div>
+                            <div class="lg:flex-no-shrink justify-center items-center flex flex-col">
+                                <span class="text-3xl block font-bold"><small>&euro;</small>9.00</span>
+                                <strong>Abonament Lunar</strong>
+                            </div>
+                        </div>
+                        <div class="px-4 sm:px-6 py-8 text-white">
+                            <div class="mb-8 font-black text-lg">Cursul 7 ARTE</div>
+                            <div class="grid gap-4 lg:grid-cols-3">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" fill="#fff"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Iluzionism</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" fill="#fff"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Mentalism</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" fill="#fff"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Hipnoză</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" fill="#fff"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Street Magic</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" fill="#fff"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Mathemagic</h6>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" fill="#fff"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Prestidigitație</h6>
+                                    </div>
+                                </div>
+                                <!-- <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 mr-2" fill="#fff" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                    </svg>
+                                    <div>
+                                        <h6 class="font-semibold">Comedy Magic</h6>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <div class="flex flex-col items-center md:flex-row absolute bottom-6">
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Inscrie-te acum!
+                                </a>
+                                <a href="/" aria-label=""
+                                    class="inline-flex items-center font-semibold text-white transition-colors duration-200 hover:text-deep-purple-accent-700">+2
+                                    Bonusuri</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="bg-white">
+            <div
+                class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-28 z-0 text-darken-500 relative">
+                <img src="/assets/ilu_01.png" class="absolute left-0 bottom-0" style="z-index: -1;">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20">
+                    <h2 data-aos="fade-up" class="mb-2 text-3xl font-black leading-none tracking-tight text-ebony sm:text-5xl md:mx-auto">
+                        Conținut cursuri
+                    </h2>
+                    <p data-aos="fade-up" data-aos-delay="100" class="text-base text-ebony md:text-xl">
+                        Fiecare curs este împărțit in 3 Secțiuni (începător, mediu și avansat).
+                    </p>
+                </div>
+
+
+
+                <div data-aos="fade-in" data-aos-delay="300" class="accordion container mx-auto mb-16">
+
+                    <!-- Panel 1 -->
+                    <div>
+                        <input type="radio" name="panel" id="panel-1">
+                        <label for="panel-1">7 Arte (21 sesiuni video)</label>
+                        <div class="accordion__content accordion__content--small">
+                            <h2 class="accordion__header">Capitole</h2>
+                            <p class="accordion__body">
+                            <div class="mb-6">
+                                <p>1. Un aspect esențial</p>
+                                <p>2. 2 elemente pentru succes</p>
+                                <p>3. Trebuie să faci asta</p>
+                                <p>4. 2 mari greșeli pe care să nu le faci niciodată</p>
+                                <p>5. Magician într-o secundă</p>
+                                <p>6. Magician într-o secundă – Secretul</p>
+                                <p>7. Magician într-o secundă – Treidetreflă unghi</p>
+                                <p>8. Street magic. Categoria în care uimești orice persoană în mai puțin de 30 de
+                                    secundaă. Rapid. Eficient. Cartea
+                                    la care se gândește un spectator ajunge intr-o secunda intr-o sticla. În interiorul
+                                    acesteia. Sticla poate fi
+                                    ținută în mână chiar de spectator.</p>
+                                <p>9. Street magic – Secretul</p>
+                                <p>10. Street magic – Treidetreflă unghi</p>
+                                <p>11. Citește gândurile oricui în mai puțin de 10 secunde. Efect : Nu ai nevoie de
+                                    asistente, de lumini speciale de
+                                    efecte speciale pentru acest efect. Ești doar tu cu oamenii. Spectatorul se gândește
+                                    la un lucru. Pe mâna
+                                    magicianului apare scris acel lucru în mai puțin de 5 sec spre uimirea
+                                    spectatorului.</p>
+                                <p>12. Citește gândurile oricui – Secretul</p>
+                                <p>13. Mathemagic sau fă calcule ca un geniu. Efect : Magicianul face calcule cu viteza
+                                    luminii în mai puțin de 10
+                                    sec. Un efect special prin care poți să impresionezi pe absolut oricine dar în
+                                    special , profesorul de
+                                    matematică, fiindcă niciodată nu va știi cum ai făcut.</p>
+                                <p>14. Mathemagic – Secretul</p>
+                                <p>15. Niciodată să nu faci asta! Ce să faci zilnic?</p>
+                                <p>16. Prestidigitație. Aici devii profesionist. Înveți simplu, cum să devii elegant.
+                                    Înveți cum să te miști ca un
+                                    profesionist. Expresivitate alături de efecte vizuale puternice. Înveți să tai un
+                                    pachet de cărți folosind o
+                                    singură mâna. Învață asta mai repede decât clipești.</p>
+                                <p>17. Taie pachetul de cărți folosind o singură mâna – Secretul</p>
+                                <p>18. Taie pachetul de cărți folosind o singură mâna – Treidetreflă unghi</p>
+                                <p>19. Bonus</p>
+                                <p>20. Fă-i să râdă până dispar. Magicianul prezintă o carte de joc. Poate fi chiar
+                                    împrumutată. Învață cum să treci
+                                    întreg piciorul prin carte fără să o rupi</p>
+                                <p>21. Comedy magic – Secretul</p>
+                                <p>După ce cumperi acest curs investiția ta pentru recuzită va fi undeva în jur de 0
+                                    lei. Am structurat astfel încât
+                                    să îți folosești și dezvolți abilitați de comunicare, mentalitate și expresivitate.
+                                </p>
+                                <p>Fiecare efect este simplificat astfel încât să înveți rapid și eficient.</p>
+                                <p>Fiecare secret are o calitate de bază : practic și concret.</p>
+                                <p>Practic : investiție recuzită aproape de zero.</p>
+                                <p>Concret : fiecare efect testat cu audiență reala. Reacții de uimire garantate.</p>
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 mt-8 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Ma inscriu acum!
+                                </a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Panel 1 -->
+                    <div>
+                        <input type="radio" name="panel" id="panel-2">
+                        <label for="panel-2">ILUZIONISM (24 sesiuni video)</label>
+                        <div class="accordion__content accordion__content--small">
+                            <p class="accordion__body">
+                            <div class="mb-6 mt-8">
+                                <p>2. Moneda care dispare – Secretul</p>
+                                <p>3. Teleportează o biluță dintr-o mână în cealaltă mai repede decât strănuți. Fă asta
+                                    și în mâna spectatorului.
+                                    Lasă-l să simtă miracolul din palma sa.</p>
+                                <p>4. Teleportare biluță – Secretul</p>
+                                <p>5. Teleportare biluță – Treidetreflă unghi</p>
+                                <p>6. Ghicește orice carte aleasă în mai puțin de 10 secunde. Nu trebuie obligatoriu să
+                                    atingi pachetul de cărți. În
+                                    același timp cartea aleasă de spectator apare lângă cei 4 ași.</p>
+                                <p>7. Ghicește orice carte – Secretul</p>
+                                <p>8. Ghicește orice carte – Treidetreflă unghi</p>
+                                <p>9. Trece o mână prin cealaltă în fața ochilor spectatorilor tăi. Vizibil. Nu ai
+                                    nevoie de absolut nimic. Trebuie
+                                    doar să ști secretul. Efect cu care David Copperfield deschide spectacolul.</p>
+                                <p>10. Mâinile – Secretul</p>
+                                <p>11. Mâinile – Treidetreflă unghi</p>
+                                <p>12. Un efect simplu cu un impact fenomenal. Spectactorul amestecă pachetul de cărți
+                                    pe care îl întinde pe masă.
+                                    Magicianul îl roagă să se oprească cu degetul la 3 cărți. Fără să vadă cărțile,
+                                    spectatorul se va opri mereu
+                                    când vrei tu la ce cărți vrei tu. Uimire. Mut de uimire</p>
+                                <p>13. Mut de uimire – Secretul</p>
+                                <p>14. Mut de uimire – Treidetreflă unghi</p>
+                                <p>15. Un pahar sau o cană trece în mai puțin de o secundă prin masă. Totul în fața
+                                    ochilor săi. Rapid. Eficient.
+                                </p>
+                                <p>16. Paharul – Secretul</p>
+                                <p>17. Paharul – Treidetreflă unghi</p>
+                                <p>18. Cel mai mare secret al iluzionismului</p>
+                                <p>19. Cel mai mare secret – Explicația</p>
+                                <p>20. Cel mai mare secret – Treidetreflă unghi</p>
+                                <p>21. Levitează în fața lor. Te ridici vizibil de la pământ 20-30 de cm. Nu ai nevoie
+                                    de nici un accesoriu sau
+                                    echipament special. Doar tu și oamenii.</p>
+                                <p>22. Levitația – Secretul</p>
+                                <p>23. Bonus – Efect cu care închei un spectacol în aplauze. Spectatorul taie pachetul,
+                                    îl amestecă, îl taie iar,
+                                    împarte cărțile pe 4 coloane iar la final pe fiecare coloană deasupra va fi câte un
+                                    as. NICIODATĂ NU ATINGI
+                                    CĂRȚILE LUI.</p>
+                                <p>24. Așii – Secretul</p>
+                                <p>*Treidetreflă unghi (Explicația secretului din unghiul magicianului)</p>
+                                <p>*David Copperfield ( Magicianul care a făcut statuia libertății să dispară /
+                                    Magicianul intrat in cartea
+                                    recordurilor cu cele mai multe bilete vândute, mai multe decât Michael Jackson)</p>
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 mt-8 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Ma inscriu acum!
+                                </a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Panel 1 -->
+                    <div>
+                        <input type="radio" name="panel" id="panel-3">
+                        <label for="panel-3">STREET MAGIC (23 sesiuni video)</label>
+                        <div class="accordion__content accordion__content--small">
+                            <p class="accordion__body">
+                            <div class="mb-6 mt-8">
+                                <p>1. Cel mai important lucru.</p>
+                                <p>2. Așează în palma ta un lucru. Acesta dispare într-o secundă și apare în palma
+                                    spectatorului. Vizual. Simplu.
+                                    Rapid.</p>
+                                <p>3. Palma – Secretul</p>
+                                <p>4. Cum îți răsucești mâna la 360 de grade.</p>
+                                <p>5. Cum îți răsucești mâna la 360 de grade – Secretul.</p>
+                                <p>6. Fă orice carte să apăra între cei 2 ași. Poate fi chiar o carte semnată. Nimic
+                                    special. Doar secretul.</p>
+                                <p>7. Cei 2 ași – Secretul.</p>
+                                <p>8. Spectatorul ține în mâna sa 2 cărți. Acestea dispar instant și apar în buzunarul
+                                    tău, în părul sau între
+                                    picioarele sale.</p>
+                                <p>9. Cartea între picioare.</p>
+                                <p>10. Cartea între picioare – Secretul</p>
+                                <p>11. Alege o carte. Magicianul amestecă pachetul de cărți pe care îl aruncă către un
+                                    geam. În spatele geamului, pe
+                                    partea cealaltă se află cartea aleasă. Îți vei face o reputație cu acest efect.
+                                    Secretul preferat al lui David
+                                    Blaine.</p>
+                                <p>12. Cartea prin geam – Secretul</p>
+                                <p>13. Cartea prin geam – Treidetreflă unghi</p>
+                                <p>14. Cartea din mâna ta dispare vizibil și apare în mâna spectatorului tău. Cartea din
+                                    mâna spectatorului apare în
+                                    mâna ta. Totul în mai puțin de 5 secunde. Cele mai bune reacții. Garantat.</p>
+                                <p>15. Teleportare – Secretul</p>
+                                <p>16. Teleportare – Treidetreflă unghi</p>
+                                <p>17. De fiecare dată când pocnești din degete cartea aleasă de un spectator ajunge din
+                                    mijlocul pachetului
+                                    deasupra. Singurul efect pe care îl poți repeta. Niciodată nu va ști cum faci.
+                                    Fiecare repetiție vine cu o nouă
+                                    supriză.</p>
+                                <p>18. Pocnește – Secretul – Partea 1</p>
+                                <p>19. Pocnește – Secretul – Partea a 2-a</p>
+                                <p>20. Pocnește – Secretul – Partea a 3-a</p>
+                                <p>21. Pocnește – Recapitulare</p>
+                                <p>22. Fă orice monedă oricând să apară din mâna spectatorului pe umărul său, apoi din
+                                    nou pe umărul său apoi sub
+                                    ceas</p>
+                                <p>23. Moneda sub ceas – Secretul</p>
+                                <p>Obține reacții extraordinare în mai puțin de 30 de sec. O să iubești această
+                                    secțiune. O să îmi mulțumești toată
+                                    viața pentru că te-am învățat ce înseamnă concret și practic în magie.</p>
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 mt-8 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Ma inscriu acum!
+                                </a>
+                                <p class="mt-6">*Treidetreflă unghi (Explicația secretului din unghiul magicianului)</p>
+                                <p>*David Blaine – Magicianul care a revoluționat magia in anii 90. Acesta a ieșit în
+                                    strada și în mai puțin de 30
+                                    de secunde a obținut cele mai puternice reacții din toate timpurile, folosind
+                                    lucruri simple. Doar el. El și
+                                    oamenii.</p>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Panel 1 -->
+                    <div>
+                        <input type="radio" name="panel" id="panel-4">
+                        <label for="panel-4">MENTALISM (22 de sesiuni video)</label>
+                        <div class="accordion__content accordion__content--small">
+                            <p class="accordion__body">
+                            <div class="et_pb_toggle_content clearfix" style="display: block;">1. Cel mai important
+                                lucru<p></p>
+                                <p>2. Gândește-te la un număr – Secretul</p>
+                                <p>3. Gândește-te la un număr – Variație</p>
+                                <p>4. Gândește-te la un număr – Variație – Secretul</p>
+                                <p>5. Întotdeauna să ții minte asta.</p>
+                                <p>6. Îndoaie cu puterea minții orice monedă. Dă moneda la control. Spectatorul nu o
+                                    poate îndoi niciodată. Se poate
+                                    întâmpla chiar în mâna spectatorului.</p>
+                                <p>7. Moneda – Secretul</p>
+                                <p>8. Transferă abilitatea ta la oricine, oricând. Fă un spectator să ghicească
+                                    gândurile altui spectator. Poți face
+                                    asta. Acum. Simplu. Efect garantat.</p>
+                                <p>9. Transfer de abilitate – Secretul</p>
+                                <p>10. Transfer de abilitate – Treidetrefla unghi</p>
+                                <p>11. Un spectator se gândește la o carte. Vei ști mereu la ce carte se gândește.</p>
+                                <p>12. Gândește-te la o carte – Secretul + Bonus(Arată o carte care se transformă
+                                    instant, vizibil in cartea la care
+                                    el/ea se gândește)</p>
+                                <p>13. Gândește-te la o carte – Treidetreflă unghi</p>
+                                <p>14. Premoniție. Spectatorul amestecă pachetul de cărți. Așezi o carte roșie în stânga
+                                    și una neagră în dreapta.
+                                    Spectatorul așează cărțile fără să le vadă cum simte. La final toate corespund. Un
+                                    miracol care se întâmplă în
+                                    mâinile sale.</p>
+                                <p>15. Premoniție – Secretul</p>
+                                <p>16. Premoniție – Treidetreflă unghi</p>
+                                <p>17. Îndoaie orice carte de joc cu puterea minții.</p>
+                                <p>18. Cartea care se îndoaie – Secretul</p>
+                                <p>19. Îndoaie orice furculiță în fața lor, după ce au verificat furculița. Nimic
+                                    special. Doar Secretul.</p>
+                                <p>20. Îndoaie orice furculiță – Secretul</p>
+                                <p>21. Rupe o furculiță fără nici un efort.</p>
+                                <p>22. Expresivitate – cel mai important aspect</p>
+                                <p>Ai pe masă toate secretele să jonglezi cu gândurile sale. Transformă secretele în
+                                    abilitate. Dezvoltă-ți
+                                    imaginația și creativitatea.</p>
+                                <p></p>
+                                <div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_left et_pb_module et_had_animation"
+                                    style="">
+                                    <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="#abonament"
+                                        data-et-has-event-already="true">MĂ ABONEZ </a>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Panel 1 -->
+                    <div>
+                        <input type="radio" name="panel" id="panel-5">
+                        <label for="panel-5">HIPNOZĂ</label>
+                        <div class="accordion__content accordion__content--small">
+                            <p class="accordion__body">
+                            <div class="mb-6 mt-8">
+                                <p>1. Tot ce trebuie să știi despre hipnoză</p>
+                                <p>2. 3 lucruri esențiale despre hipnoză despre care nimeni niciodată nu vorbește.</p>
+                                <p>3. Controlează palma subiectului tău.</p>
+                                <p>4. Controlează mâinile subiectului tău.</p>
+                                <p>5. Controlează corpul subiectului tău.</p>
+                                <p>6. Controlează ochii subiectului tău. Nu îi poate deschide decât după ce îi spui tu.
+                                </p>
+                                <p>7. Controlează vocea spectatorului.</p>
+                                <p>8. Fă o persoana sa nu poată rosti cifra 7.</p>
+                                <p>9. Fă o persoana să nu își poată rosti numele cu buletinul în față.</p>
+                                <p>10. Bonus.</p>
+                                <p>Niciodată nu a fost mai simplu să hipnotizeze o persoana. O noua perspectivă. Simplu.
+                                    Eficient.</p>
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 mt-8 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Ma inscriu acum!
+                                </a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Panel 1 -->
+                    <div>
+                        <input type="radio" name="panel" id="panel-6">
+                        <label for="panel-6">PRESTIDIGITAȚIE (35 de sesiuni video)</label>
+                        <div class="accordion__content accordion__content--small">
+                            <p class="accordion__body">
+                            <div class="mb-6 mt-8">
+                                <p>1. De ce ai nevoie de acest curs?</p>
+                                <p>2. De ce este o adevărată revoluție acest curs.</p>
+                                <p>3. Cum să arunci un pachet pe spatele palmei ca un profesionist.</p>
+                                <p>4. Taie pachetul ca un profesionist.</p>
+                                <p>5. Taie pachetul de cărți folosind o singură mână.</p>
+                                <p>6. Cum să tai fals un pachet de cărți</p>
+                                <p>7. Cum să tai fals un pachet de cărți – Variație 2</p>
+                                <p>8. Cum să tai fals un pachet de cărți – Variație 3</p>
+                                <p>9. Taie pachetul de cărți ca un profesionist</p>
+                                <p>10. Taie pachetul de cărți folosind o singură mână(dreapta) – Secretul</p>
+                                <p>11. Taie pachetul de cărți folosind o singură mână(dreapta) – Secretul – Treidetreflă
+                                    unghi</p>
+                                <p>12. Taie pachetul de cărți folosind o singură mână(stânga) – Secretul – Treidetreflă
+                                    unghi</p>
+                                <p>13. Taie pachetul de cărți cu ambele mâini în același timp – Treidetrefla unghi</p>
+                                <p>14. Bumerangul sau cum să arunci o carte de joc in aer folosind o singură mănă</p>
+                                <p>15. Bumerangul – Secretul</p>
+                                <p>16. Bumerangul – Performanță exclusivă</p>
+                                <p>17. Bumerangul – Performanță exclusivă – Secretul</p>
+                                <p>18. Cum să arunci o carte între 20 și 50 de m.</p>
+                                <p>19. Cum să arunci o carte – Secretul</p>
+                                <p>20. Cum să faci un evantai – Secretul</p>
+                                <p>21. Evantai cu o singură mâna.</p>
+                                <p>22. Cum să faci un evantai cu o singură mâna(dreapta) – Secretul</p>
+                                <p>23. Cum să faci un evantai cu o singură mâna(stânga) – Secretul</p>
+                                <p>24. Cum să faci un evantai cu ambele mâini în același timp</p>
+                                <p>25. Evantai cu ambele maini – Secretul</p>
+                                <p>26. Evantai – Performanța</p>
+                                <p>27. Cascadă cărți – Secretul</p>
+                                <p>28. Cum să faci o linie dintr-un pachet de cărți</p>
+                                <p>29. Linia – Secretul</p>
+                                <p>30. Linia – Secretul – Treidetreflă unghi</p>
+                                <p>31. Cum să faci un pod dintr-un pachet de cărți.</p>
+                                <p>32. Podul – Secretul</p>
+                                <p>33. Cum să faci un Hexagon dintr-un pachet de cărți</p>
+                                <p>34. Hexagonul – Secretul</p>
+                                <p>35. Hexagonul – Bonus – Performanță</p>
+                                <p>Nuanțează-ți spectacolul folosind aceste tehnici geniale. Dă-i culoare. Sau pur și
+                                    simplu postează pe Tik Tok
+                                    ceea ce înveți aici. Fii unic. Fii diferit. Pentru că tu ești special.</p>
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 mt-8 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Ma inscriu acum!
+                                </a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Panel 1 -->
+                    <div>
+                        <input type="radio" name="panel" id="panel-7">
+                        <label for="panel-7">COMEDY MAGIC (8 sesiuni video)</label>
+                        <div class="accordion__content accordion__content--small">
+                            <p class="accordion__body">
+                            <div class="mb-6 mt-8">
+                                <p>2. Laptele – Secretul</p>
+                                <p>3. Bețișorul de cafea – un puzzle simplu pe care nu vor știi niciodată să îl rezolve
+                                    fără ajutorul tău</p>
+                                <p>4. Bețișorul de cafea – Secretul</p>
+                                <p>5. Cele 2 monezi – Învață-i să-și surprindă și amuze prietenii</p>
+                                <p>6. Cele 2 monezi – Secretul</p>
+                                <p>7. Bancnota – Cum reușești să scoți o bancnotă udă de sub o sticlă fără să atingi
+                                    sticla</p>
+                                <p>8. Paharele – Câștigă orice pariu</p>
+                                <p>Dacă ești la început trebuie să ști un lucru esențial despre umor. Ce anume
+                                    declanșează umorul? De ce este un
+                                    instrument genial în relația cu publicul?</p>
+                                <a href="/"
+                                    class="inline-flex items-center justify-center w-full text-sm py-3 px-8 mb-3 mt-8 font-bold tracking-wide uppercase text-white transition duration-200 rounded-lg shadow-md md:w-auto md:mr-4 md:mb-0 bg-secondary hover:bg-secondary-400 focus:shadow-outline focus:outline-none">
+                                    Ma inscriu acum!
+                                </a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div><!-- .accordion -->
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <div class="bg-ebony">
+            <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                <div class="grid row-gap-10 mb-8 lg:grid-cols-6">
+                    <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-3">
+                        <div>
+                            <p class="font-black tracking-wide text-gray-300">Contact</p>
+                            <ul class="mt-2 space-y-2">
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Bucuresti,
+                                        Romania</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">+40785302410</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">contact@treidetrefla.ro</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-black tracking-wide text-gray-300">Info</p>
+                            <ul class="mt-2 space-y-2">
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Despre
+                                        mine</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Abonamente</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-black tracking-wide text-gray-300">Link-uri utile</p>
+                            <ul class="mt-2 space-y-2">
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Termeni
+                                        si conditii</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Politica
+                                        de confidentialitate</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="md:max-w-md lg:col-span-2">
+                        <span class="text-base font-black tracking-wide">Newsletter</span>
+                        <form class="flex flex-col mt-4 md:flex-row">
+                            <input placeholder="Adresa de email" required="" type="text"
+                                class="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 text-ebony rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-secondary-400 focus:outline-none focus:shadow-outline" />
+                            <button type="submit"
+                                class="inline-flex items-center justify-center h-12 px-6 font-bold tracking-wide transition duration-200 rounded shadow-md bg-secondary-500 hover:bg-secondary-600 focus:shadow-outline focus:outline-none">
+                                Abonare
+                            </button>
+                        </form>
+                        <p class="mt-4 text-sm text-gray-500">
+                            Aboneaza-te acum si fii mereu informat si la curent cu toate noutatile!
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
+                    <p class="text-sm text-gray-500">
+                        ©2020 TREIDETREFLA.RO
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4 sm:mt-0">
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                                <path
+                                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                            <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                                <circle cx="15" cy="15" r="4"></circle>
+                                <path
+                                    d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                                <path
+                                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div> <!-- Content Closing -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        (function () {
+            window.addEventListener('scroll', function (event) {
+                var depth, i, layer, layers, len, movement, topDistance, translate3d;
+                topDistance = this.pageYOffset;
+                layers = document.querySelectorAll("[data-type='parallax']");
+                for (i = 0, len = layers.length; i < len; i++) {
+                    layer = layers[i];
+                    depth = layer.getAttribute('data-depth');
+                    movement = -(topDistance * depth);
+                    translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+                    layer.style['-webkit-transform'] = translate3d;
+                    layer.style['-moz-transform'] = translate3d;
+                    layer.style['-ms-transform'] = translate3d;
+                    layer.style['-o-transform'] = translate3d;
+                    layer.style.transform = translate3d;
+                }
+            });
+
+        }).call(this);
+
+        (function () {
+
+            var youtube = document.querySelectorAll(".youtube");
+
+            for (var i = 0; i < youtube.length; i++) {
+
+                // var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/hqdefault.jpg";
+                var source = "assets/101.png";
+
+                var image = new Image();
+                image.src = source;
+                image.addEventListener("load", function () {
+                    youtube[i].appendChild(image);
+                }(i));
+
+                youtube[i].addEventListener("click", function () {
+
+                    var iframe = document.createElement("iframe");
+
+                    iframe.setAttribute("frameborder", "0");
+                    iframe.setAttribute("allowfullscreen", "");
+                    iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+
+                    this.innerHTML = "";
+                    this.appendChild(iframe);
+                });
+            };
+
+        })();
+
+        const checkpoint = 700;
+        const nav_checkpoint = 200;
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= checkpoint) {
+                opacity = 1 - currentScroll / checkpoint;
+            } else {
+                opacity = 0;
+            }
+
+            if (currentScroll <= nav_checkpoint) {
+                navbar_bg = "transparent";
+                login_button_bg = "#030508";
+            } else {
+                navbar_bg = "rgba(3, 5, 8, .95)";
+                login_button_bg = "#AB7B09";
+            }
+            document.querySelector("#hero").style.opacity = opacity;
+            document.querySelector("#nav").style.backgroundColor = navbar_bg;
+            document.querySelector("#loginButton").style.backgroundColor = login_button_bg;
+        });
+
+
+        function scrollToId(id) {
+            console.log(id)
+            console.log(document.getElementById(id))
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+            });
+        }
+
+        AOS.init();
+
+    </script>
+</body>
+
+</html>
